@@ -1,8 +1,10 @@
 <template>
     <li>
-        <h3>
-            <a :href="url">{{title}}</a>
-        </h3>
+        <base-card>
+            <a :href="url">
+                <h3>{{title}}</h3>
+            </a>
+        </base-card>
     </li>
 </template>
 
@@ -13,5 +15,12 @@ export default {
 </script>
 
 <style scoped>
+    a,h3 {
+        text-decoration: none;
+        color: black;
+    }
 
+    li {
+        margin: auto;
+    }
 </style>
