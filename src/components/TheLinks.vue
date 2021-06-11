@@ -1,23 +1,31 @@
 <template>
-    <header v-for="link in links" :key="link.id">
-        <a :href="link.link">{{link.title}}</a>
-    </header>
+<ul>
+    <link-card v-for="link in links"
+        :key="link.id"
+        :title="link.title"
+        :url="link.url"
+    ></link-card>
+</ul>
 </template>
 
 <script>
+import LinkCard from './LinkCard.vue'
 export default {
+    components: {
+        LinkCard,
+    },
     data() {
         return {
             links: [
                 {
                     id: 'github',
                     title: 'Github',
-                    link: 'https://github.com/BraydenNeale'
+                    url: 'https://github.com/BraydenNeale'
                 },
                 {
                     id: 'linkedin',
                     title: 'LinkedIn',
-                    link: 'https://www.linkedin.com/in/brayden-neale-135254102'
+                    url: 'https://www.linkedin.com/in/brayden-neale-135254102'
                 }
             ]
         }
