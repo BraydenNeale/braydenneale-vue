@@ -11,5 +11,12 @@ export default {
 </script>
 
 <style scoped>
+li {
+    display: inline-block;
+    max-width: 40rem;
+}
 
+img {
+    max-width: 12rem;
+}
 </style>
