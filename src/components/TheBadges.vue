@@ -1,13 +1,19 @@
 <template>
     <ul>
-        <li v-for="badge in badges" :key="badge.id">
-            <img :src="badge.icon" :alt="badge.title">
-        </li>
+        <cert-badge v-for="badge in badges"
+            :key="badge.id"
+            :title="badge.title"
+            :icon="badge.icon"
+        ></cert-badge>
     </ul>
 </template>
 
 <script>
+import CertBadge from './CertBadge.vue'
 export default {
+    components: {
+        CertBadge
+    },
     data() {
         return {
             badges: [
