@@ -1,14 +1,17 @@
 <template>
   <the-links></the-links>
+  <the-badges></the-badges>
 </template>
 
 <script>
 import TheLinks from './components/TheLinks.vue'
+import TheBadges from './components/TheBadges.vue'
 
 export default {
   name: 'braydenneale',
   components: {
-    TheLinks
+    TheLinks,
+    TheBadges
   }
 }
 </script>
