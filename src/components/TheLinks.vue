@@ -39,7 +39,7 @@ export default {
                 },
                 {
                     id: 'tutorial-academy',
-                    title: 'Project: Tutorial Academy Rails App',
+                    title: 'Project: Tutorial Academy - Rails App',
                     url: 'https://tutorial-academy.herokuapp.com/'
                 }
             ]
